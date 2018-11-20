@@ -1,0 +1,307 @@
+header{
+  width:1263px;
+  height: 175px; 
+  margin:0 auto; 
+  /* border:1px solid red; */
+}
+.header_nav{
+    width:100%;
+    height: 30px;
+    /* 
+    border:1px solid red; */
+}
+.header_nav>ul>li{
+    float: left;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size:12px;
+    margin-left:20px;
+    margin-top:5px;
+    border-right:1px solid #ccc;
+    padding-right:20px;
+}
+.header_nav>ul>li:first-child{
+    margin-left:90px;
+}
+.header_nav>ul>.last_li{
+    float:right;
+    margin-right:40px;
+    border:none;
+}
+.header_nav>ul>.last_li>a{
+     color:#0f4fc7;
+}
+.header_nav>ul>.play_li>a{
+    color:#0f4fc7;
+}
+/* 搜索区域 */
+.input_nav{
+       width:1200px;
+       height: 120px;
+       /* border:1px solid red; */
+}
+/* 图标背景 */
+.img_i{
+     width:245px;
+     height: 48px;
+     /* border:1px solid red; */
+     background: url("../imgs/first/index_03.png");
+     background-size: contain;
+    float:left;
+    margin:30px 20px;
+}
+/* 搜索框 */
+.check_input{
+    width:810px;
+    height: 40px;
+    border:2px solid #ffb100;
+    border-radius: 30px;
+    float:left;
+    margin-top:30px;
+    position: relative;
+}
+/* 设置全部 下面的浮框 */
+.check_input .address_div>div{
+    width:100px;
+    height: 210px;
+    background: #fffcfc;
+    position: absolute;
+    text-align: center;
+    margin-left:12px;
+    display: none;
+    
+}
+/* @keyframes move{
+    0%{
+        height:0px;
+    }
+    33%{
+        height:70px;
+    }
+    66%{
+        height: 140px;
+    }
+    100%{
+        height: 210px;
+    }
+} */
+/* 点击全部鼠标变成小胖手 */
+.check_input .address_div>span:hover{
+    cursor: pointer;
+}
+/* 点击全部浮框出现 */
+.check_input .address_div:hover >div{
+    /* animation:2s move; */
+    display: block;
+}
+.check_input .address_div>div>ul>li{
+   height:30px;
+   text-align: center;
+   line-height: 30px;
+}
+.check_input .address_div>div>ul>li:hover{
+    background:#ffb100;
+     
+}
+.check_input .address_div>div>ul>li>a:hover{
+        color:#fff;
+}
+
+/* 全部框 */
+.check_input .address_div>span{
+    display: inline-block;
+    width:126px;
+    height: 30px;
+    border-right:1px solid #ffb100;
+    margin-top:5px;
+    text-align: center;
+    line-height: 30px;
+    font-size:19px;
+}
+/* 搜索字设置 */
+.check_input>span{
+     /* display: inline-block; */
+    width:126px;
+    height: 40px;
+   background: #ffb100;
+   border-radius: 0px 30px 30px 0px;
+    text-align: center;
+    line-height: 40px;
+    font-size:19px;
+    float:right;
+   
+}
+.address_div{
+    float: left;
+}
+/* input框设置 */
+.check_input .my_ipt{
+    outline: none;
+    border:none;
+    color: #383737;
+    font-size:12px;
+    float:left;
+    margin:12px 10px;
+}
+/* 搜索框下面的导航 */
+.check_nav{
+    width:650px;
+    height: 20px;
+    /* border:1px solid red; */
+    text-align: center;
+    line-height: 20px;
+    float:left;
+    margin-top:10px;
+    margin-left:30px;
+}
+.check_nav>ul>li{
+    float:left;
+
+}
+.check_nav>ul>li:first-child{
+    font-size:14px;
+}
+.check_nav>ul>li>a{
+    font-size:12px;
+    color:#807d7d;
+    margin-left:15px;
+}
+.check_nav>ul>li>a:hover{
+    color:#ff6c66;
+}
+/* 点击搜索出现地点浮框 */
+.fu_di{
+    width:650px;
+    height: 220px;
+    border:1px solid #ececec;
+    background: #fff;
+    float: left;
+     margin-left:30px;
+     margin-top:-33px;
+     display: none;
+}
+.fu_di>div{
+    width:280px;
+    height: 106px;
+    /* border:1px solid red; */
+    float: left;
+    margin-left:10px;
+}
+/* 改变p的字体颜色 */
+.fu_di>div>p{
+    color:#ffb100;
+}
+.fu_di>div>ul>li{
+    float: left;
+}
+.fu_di>div>ul>li>a{
+    font-size:13px;
+    color:#928f8f;
+    margin-left:8px;
+}
+.fu_di>div>ul>li>a:hover{
+    color:#ff6c66;
+}
+.fu_di .fu_di_out{
+    margin-left:75px;
+}
+/* 改变酒店的长度 */
+.fu_di .fu_di_hotel{
+    width:640px;
+}
+/* 中间导航栏 */
+.nav_nav{
+    width: 1263px;
+    height: 50px;
+    /* border:1px solid red; */
+    background: #0298e5;
+    margin:0 auto;
+}
+.nav_nav>ul>li{
+    float:left;
+     width:100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    /* border:1px solid red; */
+    margin-left:10px;
+}
+.nav_nav>ul>li:first-child{
+    width:160px;
+     background: #006bd4;
+     margin-left:30px;
+}
+.nav_nav>ul>li:last-child{
+    width:160px;
+    float:right;
+    margin-right:30px;
+   background: #006bd4;
+}
+.nav_nav>ul>li:hover{
+    background: #006bd4;
+}
+.nav_nav>ul>li>a{
+    font-size:18px;
+    color:#fff;
+    
+}
+/* 中间主题部分 */
+.contion{
+    width:1200px;
+    height: 3000px;
+    margin:0 auto;
+    border:1px solid red;
+}
+/* 轮波图 */
+.contion .wave_section{
+    width:1200px;
+    height: 380px;
+    border:1px solid red;
+    margin-top:10px;
+}
+.wave_section .wave_lunbo{
+     width:800px;
+    height: 370px;
+    border:1px solid red;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.wave_section .wave_lunbo>ul>li{
+    position: absolute;
+
+}
+.wave_section .wave_lunbo>ul>li>img{
+    width:800px;
+    height: 370px;
+    
+}
+/* 轮播图上的点播长方形 */
+.wave_section .dots{
+    width:120px;
+    height: 20px;
+    /* border:1px solid red; */
+    position: absolute;
+    left:43%;
+    bottom:5px;
+}
+.wave_section .dots>span{
+    display: inline-block;
+    width:23px;
+    height: 6px;
+    /* border:1px solid red; */
+     background:rgba(0, 0, 0, 0.7);
+}
+/* 右侧栏 */
+.right_li{
+    width:380px;
+    height: 370px;
+    border:1px solid red;
+    float:left;
+}
+.right_li .right_li_img{
+     width:380px;
+    height: 110px;
+    border:1px solid red;
+}

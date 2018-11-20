@@ -1,0 +1,231 @@
+.banner{
+    width:1265px;
+    height: 386px;
+    /* border:1px solid red; */
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   
+}
+.banner ul{
+    width: 1265px;
+    height: 386px;
+    
+   
+}
+.banner>ul li{
+    position:absolute;
+    opacity: 0;
+}
+.banner>ul li:first-child{
+    opacity: 1;
+}
+.banner ul li img{
+    width:1265px;
+    height: 386px;
+}
+.banner .dot{
+    width: 250px;
+    height: 16px;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 11px;
+    position: absolute;
+    right:3%;
+    bottom:8px;
+    z-index: 1;
+
+}
+.banner>.dot>span{
+    display: inline-block;
+    width:25px;
+    height: 5px;
+   background:rgba(0, 0, 0, 0.7);
+}
+/*轮波图上的表单*/
+.banner>.hotel{
+    width:600px;
+    height: 300px;
+    /* border:1px solid red; */
+    position:absolute;
+    left:2%;
+    top:10%;
+    background: #fff;
+}
+.hotel>ul{
+width:100px;
+height: 300px;
+/* float:left; */
+/* border:1px solid #ccc; */
+}
+.hotel>ul li{
+    width: 99px;
+    height: 59px;
+    border:1px solid #ccc;
+border-bottom:none;
+    color:#616060;
+}
+
+/*添加雪碧图*/
+.hotel>ul .spirit_hotel>span{
+   display:inline-block;
+    width:60px;
+    height: 20px;
+    margin-left:15px;
+    margin-top:20px;
+    background: url(../imgs/index/icon_index.png) -582px -342px no-repeat;
+    /* border:1px solid red; */
+    text-align: center;
+    font-size: 14px;
+    padding-left:10px;
+  
+}
+.hotel>ul .spirit_plane>span{
+    display:inline-block;
+    width:60px;
+    height: 20px;
+    margin-left:15px;
+    margin-top:20px;
+     background: url(../imgs/index/icon_index.png) -581px -363px no-repeat;
+      /* border:1px solid red; */
+    text-align: center;
+    font-size: 14px;
+   padding-left:10px;
+}
+.hotel>ul .spirit_train>span{
+    display:inline-block;
+    width:60px;
+    height: 20px;
+    margin-left:15px;
+    margin-top:20px;
+    background: url(../imgs/index/icon_index.png) -583px -383px no-repeat;
+     /* border:1px solid red; */
+    text-align: center;
+    font-size: 14px;
+   padding-left:10px;
+}
+
+/* 点击时换图字体变色 */
+.hotel>ul .spirit_hotel:active>span{
+    background: url(../imgs/index/icon_index.png) -555px -342px no-repeat; 
+    color:#4499ff;
+}
+.hotel>ul .spirit_hotel:active,.hotel>ul .spirit_train:active,.hotel>ul .spirit_plane:active{
+    border-right:none;
+}
+.hotel>ul .spirit_hotel:hover,.hotel>ul .spirit_train:hover,.hotel>ul .spirit_plane:hover{
+    cursor: pointer;
+}
+/*酒店信息表单*/
+.hotel .from{
+position: absolute;
+top:0px;
+right:0px;
+width:500px;
+height:300px;
+/* border:1px solid red; */
+}
+.hotel .from>.from_header{
+    width:445px;
+    height: 46px;
+    margin:0 auto;
+    border-bottom:1px solid #4d4a4a;
+}
+.hotel .from>.from_header>span{
+    display: inline-block;
+    width:120px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height:40px;
+    margin-top: 6px;
+    position: relative;
+    
+}
+.hotel .from>.from_header>span:hover{
+   color: #3377dd;
+   
+}
+.hotel .from>.from_header>span:active{
+     border-bottom:2px solid #3377dd;
+}
+/* 点击时三角形和下划线出现 */
+.hotel .from>.from_header>span:active>i{
+    display: block;
+}
+/* 三角形 */
+.hotel .from>.from_header>span>i{
+    display: inline-block;
+    width:0px;
+    height: 0px;
+    border-top:5px solid  transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom:5px solid  #3377dd;
+    position: absolute;
+    bottom:0px;
+    left:47%;
+    display: none;
+}
+/* 表格 */
+.from_contion>table{
+    border:1px solid red;
+    
+}
+.from_contion>table>tbody>tr .redess{
+    width:300px;
+    height: 33px;
+    border:1px solid red;
+}
+
+.from_contion {
+    width:445px;
+    height: 160px;
+    border:1px solid red;
+    margin:0 auto;
+}
+/* 底部搜索栏的雪碧图和按钮 */
+.watchButton{
+    width:445px;
+    height: 45px;
+    /* border:1px solid red; */
+    margin:40px auto;
+    text-align: center;
+}
+.watchButton>span:first-child{
+    display: inline-block;
+    width:160px ;
+    height: 31px;
+    background: #ff5555;
+    border-radius: 8px;
+    color:#fff;
+    text-align: center;
+
+}
+.watchButton>span:first-child>i{
+    display: inline-block;
+    width:20px ;
+    height: 20px;
+    margin-top:5px;
+    /* border:1px solid red; */
+    background: url(../imgs/index/icon201706.png) -431px -763px no-repeat;
+}
+.watchButton>span:last-child{
+    display: inline-block;
+    width:110px ;
+    height: 29px;
+   border:1px solid #ccc;
+    border-radius: 8px;
+    color:rgb(80, 77, 77);
+    font-size: 13px;
+    text-align: center; 
+}
+.watchButton>span:last-child>i{
+    display: inline-block;
+    width:20px ;
+    height: 20px;
+     margin-top:5px;
+    /* border:1px solid red; */
+    background: url(../imgs/index/icon201706.png) -451px -763px no-repeat;
+}

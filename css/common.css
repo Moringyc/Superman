@@ -1,0 +1,18 @@
+body,h1,h2,h3,ul,ol{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+ul,ol{
+	list-style-type: none;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+a {
+	text-decoration: none;
+	color:#828080; 
+}
